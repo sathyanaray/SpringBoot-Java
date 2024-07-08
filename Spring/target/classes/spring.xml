@@ -1,0 +1,17 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="alien1" class="org.sathya.First">
+        <property name="age" value="21"></property>
+        <property name="com" ref="lap1"></property>
+    </bean>
+
+    <bean id="lap1" class="org.sathya.Laptop">
+    </bean>
+
+    <bean id="lap2" class="org.sathya.Laptop">
+    </bean>
+
+</beans>
